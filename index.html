@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teen Music 2025–2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #0E1C36, #717C89);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+header h1 span {
+    color: #E8EC67;
+}
+
+header p {
+    color: #F9E7E7;
+    font-size: 18px;
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* Сетка карточек */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+}
+
+/* Первые пять карточек */
+
+.song {
+    grid-column: span 2;
+    background: #0E1C36;
+    border: 1px solid #E0CA3C;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+    height: 100%;
+}
+
+.song:hover {
+    transform: translateY(-5px);
+}
+
+/* Последние две карточки шире */
+
+.song:nth-child(6),
+.song:nth-child(7) {
+    grid-column: span 5;
+}
+
+/* Изображения */
+
+.cover {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #717C89, #8ba3c5);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.song h3 {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.song p {
+    color: #c8bfdc;
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+
+.song a {
+    display: inline-block;
+    background: #8055e8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.song a:hover {
+    background: #ff72b6;
+}
+
+/* Информационные блоки */
+
+.info {
+    background: #211a38;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+/* Адаптация для планшетов */
+
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .song,
+    .song:nth-child(6),
+    .song:nth-child(7) {
+        grid-column: span 1;
+    }
+
+    .song:nth-child(7) {
+        grid-column: span 2;
+    }
+}
+
+/* Адаптация для телефонов */
+
+@media (max-width: 550px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .song,
+    .song:nth-child(6),
+    .song:nth-child(7) {
+        grid-column: span 1;
+    }
+
+    .song:nth-child(7) {
+        grid-column: span 1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TEEN MUSIC
+    <span>2025–2026</span></h1>
+
+    <p>
+    Discover popular English songs
+    loved by  most teenagers!
+    </p>
+</header>
+
+<main>
+
+<h2>🎧 Trending Songs</h2>
+
+<div class="grid">
+
+<div class="song">
+    <div class="cover">
+        <img src="https://avatars.mds.yandex.net/i?id=2dad3bab6a1bb7f8eec1759efd3ffc22_l-5373299-images-thumbs&n=13" alt="Sweater Weather cover">
+    </div>
+    <h3>SWEATER WEATHER</h3>
+    <p>The Neighbourhood</p>
+    <a href="https://youtu.be/GCdwKhTtNNw" target="_blank" rel="noopener">Listen to song</a>
+</div>
+
+<div class="song">
+    <div class="cover">
+        <img src="https://img.audiomania.ru/pics/goods/original/s/steve_lacy__gemini_rights1.jpg" alt="Bad Habit cover">
+    </div>
+    <h3>Bad Habit</h3>
+    <p>Steve Lacy</p>
+    <a href="https://youtu.be/UGbDWUtqMsQ" target="_blank" rel="noopener">Listen to song</a>
+</div>
+
+<div class="song">
+    <div class="cover">
+        <img src="https://n.cdn.cdek.shopping/images/shopping/3e65c4eaa16a48c7af0d8a425b5a6fe9.jpg?v=1" alt="Deja Vu cover">
+    </div>
+    <h3>deja vu</h3>
+    <p>Olivia Rodrigo</p>
+    <a href="https://youtu.be/cii6ruuycQA" target="_blank" rel="noopener">Listen to song</a>
+</div>
+
+<div class="song">
+    <div class="cover">
+        <img src="https://avatars.mds.yandex.net/i?id=17db25896866bcd6bb84baf0ecadb0b1_l-16427243-images-thumbs&n=13" alt="Birds of a Feather cover">
+    </div>
+    <h3>BIRDS OF A FEATHER</h3>
+    <p>Billie Eilish</p>
+    <a href="https://youtu.be/V9PVRfjEBTI" target="_blank" rel="noopener">Listen to song</a>
+</div>
+
+<div class="song">
+    <div class="cover">
+        <img src="https://img.audiomania.ru/pics/goods/original/t/tame_impala-currents_2_lp1.jpg" alt="The Less I Know The Better cover">
+    </div>
+    <h3>The Less I Know The Better</h3>
+    <p>Tame Impala</p>
+    <a href="https://youtu.be/2SUwOgmvzK4" target="_blank" rel="noopener">Listen to song</a>
+</div>
+
+<!-- Дополнительные широкие карточки -->
+
+<div class="song">
+    <div class="cover">
+        <div style="font-size: 28px;">🎵</div>
+    </div>
+    <h3>My Music Choice</h3>
+    <p>Discover more English songs!</p>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">Explore YouTube</a>
+</div>
+
+<div class="song">
+    <div class="cover">
+        <div style="font-size: 28px;">💜</div>
+    </div>
+    <h3>Music Is Everything</h3>
+    <p>Find your favorite music on and enjoy!</p>
+    <a href="https://open.spotify.com/" target="_blank" rel="noopener">Listen to music on spotify</a>
+</div>
+
+</div>
+
+<div class="info">
+    <h2>💜 Why do teenagers love music?</h2>
+
+    <p>
+    Music helps teenagers express their feelings,
+    connect with friends and discover new trends.
+    Pop songs are especially popular on social media
+    and streaming platforms.
+    </p>
+</div>
+
+<div class="info">
+    <h2>⭐ My Top 5 Songs</h2>
+
+    <p>
+    1. CHIHIRO - Billie Eilish<br>
+    2. Bad Habit - Steve Lacy<br>
+    3. the cure - Olivia Rodrigo<br>
+    4. Cherry Flavoured - The Neighbourhood<br>
+    5. The Sound Of Then - Timeflow
+    </p>
+</div>
+
+</main>
+
+<footer>
+    TEEN MUSIC 2025–2026
+    <br>
+    A mini project by Inkar🎵
+</footer>
+
+</body>
+</html>
